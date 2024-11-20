@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div id="calculator">
-        <input id="display" readonly>
-        <div id="keys">
-            <button class="operator" onclick="appendToDisplay('+')">+</button>
-            <button class="operator-special" onclick="appendToDisplay('x²')">x²</button>
-            <button class="operator-special" onclick="appendToDisplay('√x')">√x</button>
-            <button class="operator-special" onclick="clearDisplay()">AC</button>
-            <button class="operator" onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button class="operator" onclick="appendToDisplay('×')">×</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button class="operator" onclick="appendToDisplay('÷')">÷</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button class="operator" onclick="calculate()">=</button>
-            <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('±')">±</button>
-        </div>
+      <input id="previousExpressionDisplay" readonly  value=""> 
+      <input id="display" readonly value=""> 
+      <div id="keys">
+        <button class="operator-special" id="ACButton">AC</button> 
+
+        <button class="operator-special" id="squaredButton">
+          x²
+        </button>
+        <button class="operator-special" id="sqrtButton">
+          √x
+        </button>
+        <button class="operator" id="plusButton">+</button>
+
+        <button id="7Button">7</button>
+        <button id="8Button">8</button>
+        <button id="9Button">9</button>
+        <button class="operator" id="minusButton">-</button>
+
+        <button id="4Button">4</button>
+        <button id="5Button">5</button>
+        <button id="6Button">6</button>
+        <button class="operator" id="timesButton">×</button>
+
+        <button id="1Button">1</button>
+        <button id="2Button">2</button>
+        <button id="3Button">3</button>
+        <button class="operator" id="divideButton">÷</button>
+
+        <button id="negateButton">±</button>
+        <button id="0Button">0</button>
+        <button id="pointButton">.</button>
+        <button class="operator" id="equalsButton">=</button>
+
+      </div>
     </div>
-   
-    
-</body>
-<script src="main.js"></script>
+  </body>
+  <script src="main2.js"></script>
 </html>

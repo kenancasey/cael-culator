@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color-scheme: dark light;
 }
 
 body{
@@ -13,21 +18,34 @@ body{
 #calculator{
     font-family: sans-serif;
     background-color: rgb(15, 15, 15);
-    color: white;
+    /* color: white; */
     border-radius: 15px;
     max-width: 500px;
     overflow: hidden;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
 }
 
 #display{
-    height: 70px;;
+    height: 100px;
     width: 100%;
     padding: 20px;
-    font: 4rem;
-    text-align: left;
+    font-size: 4rem;
+    text-align: right;
     border: none;
+    outline: none;
     background-color: rgb(44, 44, 44);
+}
 
+#previousExpressionDisplay {
+    /* height: 50px; */
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(44, 44, 44);
+    font-size: 2rem;
+    text-align: right;
+    color: #999;
+    padding: 20px 20px 0px 20px;
 }
 
 #keys{
